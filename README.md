@@ -18,3 +18,4 @@ go to directory dist and execute Everytime_remover.exe
 - <b> directory path</b> is the <b>directory</b> where your webdriver exits. <br>
 - This program is not user-friendly. sorry im lazy <br>
 - no hangul in case of encoding error <br>
+- Everytime_remover.py is original python script
