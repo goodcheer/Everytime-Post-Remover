@@ -22,12 +22,13 @@ driver.get("http://everytime.kr/login")
 
 userid = input("ID: ")
 pw = input("pw: ")
-remov_num = int(input("number of posts to remove: Positive Integer"))
+remov_num = int(input("number of posts to remove: Positive Integer\n Enter 0 to skip"))
+driver.find_element_by_name(name="userid").send_keys(userid)
+driver.find_element_by_name(name="password").send_keys(pw)
+driver.find_element_by_name(name="password").send_keys(Keys.RETURN)
 
 if remov_num >0:
-    driver.find_element_by_name(name="userid").send_keys(userid)
-    driver.find_element_by_name(name="password").send_keys(pw)
-    driver.find_element_by_name(name="password").send_keys(Keys.RETURN)
+
     
     # # while True:article
     # def pageCheck(css_selector):
@@ -61,7 +62,7 @@ if remov_num >0:
         i -= 1
         driver.implicitly_wait(10)
     
-remov_num = int(input("number of comments to remove: Positive Integer"))
+remov_num = int(input("number of comments to remove: Positive Integer\n Enter 0 to exit"))
 
 if remov_num >0:
     i= remov_num + 1

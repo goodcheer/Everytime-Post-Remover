@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['Everytime_remover.py'],
-             pathex=['C:\\Users\\kyuchul\\PycharmProjects\\testtesttest'],
+             pathex=['C:\\Users\\kyuchul\\Documents\\GitHub\\Everytime-Post-Remover'],
              binaries=[],
              datas=[],
              hiddenimports=['selenium'],
